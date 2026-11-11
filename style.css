@@ -1,0 +1,109 @@
+/* Базовые настройки для сброса отступов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        /* Стили для контейнера хедера */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #f0f0f0; /* Легкая линия снизу (по желанию) */
+            height: 80px;
+           
+        }
+
+        /* Стили для логотипа */
+        .logo {
+          
+            font-size: 24px;
+            font-weight: 800; /* Жирный шрифт */
+            color: #0f172a; /* Темно-синий цвет */
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            flex-grow: 1;
+        }
+
+        /* Контейнер для правой части (меню + кнопка) */
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 32px; /* Расстояние между меню и кнопкой */
+         flex-grow: 1;
+        }
+
+        /* Стили для навигационного меню */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px; /* Расстояние между ссылками */
+            
+         
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #64748b; /* Серый цвет текста */
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+           
+           
+        }
+
+        .nav-menu a:hover {
+            color: #0f172a; /* Цвет при наведении */
+        }
+
+        /* Контейнер для иконки поиска и кнопки */
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-left: auto;
+        }
+
+        /* Стили для иконки поиска (SVG) */
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            color: #0f172a;
+        }
+
+        .search-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2;
+        }
+
+        /* Стили для кнопки "Начать обучение" */
+        .cta-button {
+            background-color: #0f172a; /* Темно-синий фон */
+            color: #ffffff;
+            border: none;
+            border-radius: 12px; /* Закругленные углы */
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            align-items: center;
+        }
+
+        .cta-button:hover {
+            background-color: #1e293b; /* Чуть светлее при наведении */
+        }
